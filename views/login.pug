@@ -1,0 +1,37 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Log In
+    link(rel='stylesheet', href='Styles/reset.css')
+    link(rel='stylesheet', href='Styles/login.css')
+  body
+    section
+      p
+        | You don't have an account ?
+        a(href='../inscription')  Sign Up
+      .container
+        img(src='/images/user.png', alt='')
+        if(error)
+          p(class='error')= error
+        form(action=url, method='post')
+          label(for='email') Email:
+          |
+          input(type='email', name='email')
+
+          br
+          br
+          br
+
+          label(for='password') Password:
+          |
+          input(type='password', name='password')
+          if passwordError
+            label(class='error')= passwordError
+
+          input(type='submit', name='', value='✔')
+
+
+  script(src='https://cdn.jsdelivr.net/jquery/1.12.4/jquery.min.js')
+  script(src='https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js')
+  script(type='text/javascript', src='js/login-valid.js')

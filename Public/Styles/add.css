@@ -1,0 +1,37 @@
+body{
+  background-color: #e6e6e6;
+}
+
+.container {
+  width: 420px;
+  margin: 0 auto;
+}
+
+form {
+  margin-top: 200px;
+  background-color: #fff;
+  padding: 10px 20px;
+
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+input[type=submit] {
+  border: 0;
+  width: 70px;
+  height: 35px;
+  background: #4caf50;
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+input[type=number]{
+  width: 70px;
+}

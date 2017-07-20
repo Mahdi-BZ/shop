@@ -1,0 +1,61 @@
+body {
+  background: url('../Images/bg.jpg') no-repeat fixed center;
+  color: #fff;
+}
+
+.container{
+
+width: 380px;
+margin: 0 auto;
+}
+
+section input[type=text], section input[type=email], section input[type=password]  {
+  height: 20px;
+}
+
+section h1 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 150px;
+  margin-bottom: 60px;
+}
+
+section input[type=submit] {
+  border: 0;
+  width: 90px;
+  height: 35px;
+  background: #4caf50;
+  color: #fff;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 600;
+  float: left;
+}
+
+section label {
+  display: inline-block;
+  width: 86px;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+label.error {
+  color: red;
+  width: auto;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+section p {
+
+  font-size: 13.5px;
+  line-height: 40px;
+  margin-left: 108px;
+}
+section a {
+ color: #4caf50;
+ width: 40px;
+ padding-left: 4px;
+ text-decoration: none;
+}

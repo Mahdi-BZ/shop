@@ -1,0 +1,87 @@
+body {
+  background: url('../../src/assets/bg6.png') no-repeat top center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #000;
+}
+
+.login .container {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.login p {
+  color: #000;
+  float: right;
+  margin-top: 20px;
+  margin-right: 10px;
+  font-size: 17px;
+  font-family: 'Futura std';
+  font-weight: 800;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.login p a {
+  color: #F33F3F;
+  text-decoration: none;
+}
+
+.login img {
+  border-radius: 50%;
+  margin-left: 28%;
+  margin-bottom: 40px;
+  margin-top: 150px;
+  width: 200px;
+  height: 200px;
+}
+
+.login input[type=email], section input[type=password]  {
+  height: 20px;
+}
+
+.login input[type=submit]{
+  border: 0;
+  background-color: #F33F3F;
+  color: #fff;
+  margin-left: 73%;
+  width: 70px;
+  height: 40px;
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+.login label {
+  display: inline-block;
+  width: 85px;
+  margin-right: 12px;
+  color: #000;
+  font-size: 18px;
+  font-family: 'Futura std';
+  font-weight: 800;
+
+}
+
+
+.login label.error {
+  display: inline-block;
+  color: red;
+  width: auto;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.login p.error{
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top:0;
+  float: none;
+  color: red;
+  font-size: 18px;
+  margin-left: 28%;
+}

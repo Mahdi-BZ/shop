@@ -1,0 +1,16 @@
+section
+  .container
+    each item in items
+      .items-box
+        img(src='/Images/user.png', alt='')
+        h6= item.User.name + ' ' + item.User.lastName
+        br
+        h1= item.title
+        br
+        h2=item.price + 'DT'
+        p= item.description
+        |
+        a(href='#') ?
+        |
+        a(href='#') Buy
+        .clearfix

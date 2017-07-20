@@ -1,0 +1,45 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title index
+    link(rel='stylesheet', href='/styles/reset.css')
+    link(rel='stylesheet', href='/styles/index.css')
+    
+  body
+    header
+      .profile
+        .profile-box
+          img(src='/uploads/profilePics/'+user.photo)
+        h2= user.name + ' ' + user.lastName
+        a(href='logout') Log out
+      .container
+        - var categories = ['sport', 'technology', 'books', 'games'];
+        each category in categories
+          .box
+            img(src='http://placehold.it/200x200', alt='')
+            p
+              a(href='/'+category)= category
+
+        .clearfix
+    section
+      .container
+        a(href='add')
+          | + Create an offer
+        each item in items
+          .items-box
+            .img-box
+              img(src='/uploads/itemPics/'+item.photo, alt='')
+            h6= item.user.name + ' ' + item.user.lastName
+            br
+            h1= item.title
+            br
+            h2=item.price + 'DT'
+            p= item.description
+            |
+            a(href='#') ?
+            |
+            a(href='#') Buy
+            .clearfix
+            
+  script(type='text/javascript', src='js/photo.js')          

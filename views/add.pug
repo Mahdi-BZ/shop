@@ -1,0 +1,39 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Add
+    link(rel='stylesheet', href='/Styles/reset.css')
+    link(rel='stylesheet', href='/Styles/add.css')
+  body
+    .container
+      form(action=url, method='post', enctype='multipart/form-data')
+        h1 Sell an item
+        |
+        input(type='text', name='title', placeholder='Title')
+        br
+        br
+        textarea(name='description', placeholder='Description', rows='8', cols='50')
+        br
+        br
+        |
+        input(type='number', name='price', placeholder='price')
+        |  DT
+        br
+        br
+        |
+        input(type='file', name='photo', placeholder='Photo of your product')
+        |
+        br
+        br
+        |
+        select(name='category')
+          option(value='Choose', hidden='') Choose a Category
+          option(value='technology') Technology
+          option(value='sport') Sport
+          option(value='books') Books
+          option(value='games') Games
+        br
+        br
+        |
+        input(type='submit', value='Submit')

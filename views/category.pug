@@ -1,0 +1,34 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title= category
+    link(rel='stylesheet', href='Styles/reset.css')
+    link(rel='stylesheet', href='Styles/category.css')
+  body
+    section
+      .profile
+        .profile-box
+          img(src='/uploads/profilePics/'+user.photo)
+        h2= user.name + ' ' + user.lastName
+        a(href='logout') Log out
+      .container
+        h1(id='title')= category
+        hr
+        each item in items
+          .items-box
+            .img-box
+              img(src='/uploads/itemPics/'+item.photo, alt='')
+            h6= item.user.name + ' ' + item.user.lastName
+            br
+            h1= item.title
+            br
+            h2=item.price + 'DT'
+            p= item.description
+            |
+            a(href='#') ?
+            |
+            a(href='#') Buy
+            .clearfix
+
+    script(type='text/javascript', src='js/photo.js')        
